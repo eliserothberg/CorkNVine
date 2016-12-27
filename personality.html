@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Cork N Vine Facts</title>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Sahitya:700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+      <div><img src="assets/images/CnVheader4.png" id="title" alt=""></div>
+
+        <nav class="navbar navbar-light bg-faded">
+          <div class="nav navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="types.html">Types of Wine</a>
+            <a class="nav-item nav-link" href="facts.html">Facts</a>
+            <a class="nav-item nav-link" href="pairings.html">Pairings</a>
+            <a class="nav-item nav-link" href="events.html">Events</a>
+            <a class="nav-item nav-link" href="map.html">Vineyard Locations</a>
+            <a class="nav-item nav-link" href="gifts.html">Gifts</a>
+          </div>
+        </nav>
+   
+  </nav>
+
+
+ <div id="facts-background">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-sm-12">
+        <h1 class= "fullWidthH1">Which Wine Matches Your Personality?</h1>
+      <div class="panel panel-default">
+
+
+      <div class="panel-body">
+        <div class="panel-body-default" class="table-responsive">
+          <table class="table table-bordered table-condensed" id="Personality Table" >
+            <thead>
+              <tr>
+                <th><h2>Personality Traits</h2></th>
+                <th><h2>Wine Match</h2></th>
+              </tr>
+            </thead>
+
+          <tbody>
+            <tr>
+              <td class="personality" value = "Malbec">Flexible, Tolerant, Pragmatic</td>
+  <!-- *********** want to create click - link in table cell -->
+              <!-- <td onclick="location.href='http://www.winesofargentina.org/argentina/variedades/malbec-torrontes/malbec/'">go to yourpage</td> -->
+
+              <!-- <td><a href="http://www.winesofargentina.org/argentina/variedades/malbec-torrontes/malbec/" style="display:block;">&nbsp;</a></td> -->
+
+              <td href="https://www.winesofargentina.org/argentina/variedades/malbec-torrontes/malbec/">Malbec</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Tempranillo">Realistic, Decisive, Organized</td>
+              <td>Tempranillo</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Grenache">Cooperative, Conscientious, Loyal</td>
+              <td>Grenache</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Zinfandel">Outgoing, Exuberant, Accepting</td>
+              <td>Zinfandel</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Carmenere">Warm, Imaginative, Loves to be Appreciated</td>
+              <td>Carmenere</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Merlot">Empathetic, Responsible, Helper at Heart</td>
+              <td>Merlot</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Sangiovese">Outspoken, Resourceful, Good at Reading Others</td>
+                <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">Sangiovese</button></td>
+            </tr>
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title" id = "titleModal"></i>You are a Sangiovese Soul</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p id="pModal">Sangiovese is a red Italian wine grape variety that derives its name from the Latin sanguis Jovis, "the blood of Jove".<br>Notable regions: Tuscany, Central Italy<br>Origin: Italy<br>Sweetness: Dry, semi-sweet, or sweet.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" class = "clickable" data-dismiss="modal" >Close</button>
+                  </div>
+                </div> <!--end modal content-->
+              </div>  <!--end modal dialog-->
+            </div>  <!--end modal fade-->
+
+          </tbody>
+        </table>
+      </div> <!--panel body-->
+    </div> <!--class panel-->
+    </div> <!--class col 6-->
+  </div> <!--row-->
+
+  </body>
+  </html>
